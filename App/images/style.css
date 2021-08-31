@@ -1,0 +1,8 @@
+h1 {
+  color: blueviolet;
+}
+.look{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
