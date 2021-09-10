@@ -11,7 +11,7 @@ const date=new Date ()
 
 // middleware
 const logger=(req,res,next)=>{
-  if ((date.getDay()==0) || (date.getDay()==6) ||(date.getHours()>=17)||(date.getHours()<=9))
+  if ((date.getDay()==0) || (date.getDay()==6) ||(date.getHours()>=17)||(date.getHours()<9))
   res.send("<h1> we are not available</h1>")
   // console.log(date.getHours())
   next()
